@@ -1,0 +1,119 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+body {
+  background-color: white;
+  font-family: 'PT Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#logo {
+  background-color: #F5005B;
+  height: 150px;
+}
+
+nav {
+    text-align: center;
+    background-color: #7DDFE8;
+    color: #FFFFFF;
+}
+
+.menu-items {
+  list-style-type: none;
+}
+
+#getInvolved {
+  padding: 10px 30px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 30px 0 20px 0;
+}
+
+h2 {
+  color: #FFFFFF;
+  background-color: #0B1942;
+  padding: 5px 20px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#points {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+.p-home {
+  padding: 20px 0;
+}
+
+#upNext {
+  background-color: #0B1942;
+}
+
+.card {
+  padding: 10px;
+  margin: 10px;
+  background-color: #E2E2E2;
+}
+
+.home {
+  background-color: #00A5BF;
+}
+
+.calendar {
+  background-color: #00B7D3;
+}
+
+.join {
+  background-color: #00D5E7;
+}
+
+#join {
+  padding: 10px;
+}
+
+#profilePic {
+  height: 150px;
+  border-radius: 90%;
+}
+
+input {
+  border: 1px solid black;
+}
+
+footer {
+  
+}
+
+/***** Tablet ******/
+@media screen and (min-width: 545px) {
+  .menu-items {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+}
+
+/***** Desktop ******/
+@media screen and (min-width: 769px) {
+
+}
