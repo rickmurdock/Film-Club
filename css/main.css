@@ -21,6 +21,7 @@ body {
 header {
   display: flex;
   flex-flow: row nowrap;
+  align-items: stretch;
 }
 
 #logo {
@@ -35,11 +36,23 @@ nav {
 }
 
 .menu-items {
+  text-decoration: none;
   list-style-type: none;
+  display: flex;
+  flex-flow: column nowrap;
+  /*justify-content: space-bewteen;*/
+  align-content: space-around;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
 }
 
-#getInvolved {
+#get-involved {
   padding: 10px 30px;
+}
+
+.get-involved-item {
+  margin: 0 10px;
 }
 
 h1 {
@@ -51,9 +64,16 @@ h1 {
 h2 {
   color: #FFFFFF;
   background-color: #0B1942;
-  padding: 5px 20px;
+  padding: 20px 20px;
   font-size: 30px;
   font-weight: 400;
+}
+
+h3 {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 400;
+  padding: 20px 0 10px 30px;
 }
 
 #points {
@@ -65,16 +85,70 @@ h2 {
   padding: 20px 0;
 }
 
-#upNext {
+#up-next {
   background-color: #0B1942;
 }
 
 .card {
-  padding: 10px;
-  margin: 10px;
+  /*/*padding: 20px;*/
+  /*margin: 20px;*/
+  padding: 5vw;
+  margin: 5vw;
   background-color: #E2E2E2;
 }
+#card-1 {
+  font-size: 120%;
+  display: flex;
+  flex-flow: row nowrap;
+}
 
+#card-2 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+h4 {
+  padding: 0 0 1.1em 0;
+}
+
+#points li {
+  /*font-size: 120%;*/
+  line-height: 160%;
+}
+
+.film {
+  /*padding: 10px;*/
+  /*padding: 5vw;*/
+  width: 40vw;
+  margin: 2vw;
+}
+
+#film-title-up-next {
+  font-size: 180%;
+  color: #00B7D3;
+  padding: 10px 0;
+}
+
+#film-title-up-next a {
+  /*font-size: 180%;*/
+  color: #00B7D3;
+}
+
+
+/*.film img {
+  height: 70%;
+  width: auto;
+}*/
+
+/*.film {
+  height: 40vw;
+}*/
+
+
+hr {
+  margin: 2em 0;
+  border: 1px solid black;
+}
 .home {
   background-color: #00A5BF;
 }
@@ -87,11 +161,15 @@ h2 {
   background-color: #00D5E7;
 }
 
+a:link {
+  /*text-decoration: none;*/
+}
+
 #join {
   padding: 10px;
 }
 
-#profilePic {
+#profile-pic {
   height: 150px;
   border-radius: 90%;
 }
@@ -101,7 +179,90 @@ input {
 }
 
 footer {
-  
+
+}
+
+/******* Calendar *******/
+
+.calendar-wrapper {
+  background-color: #0B1942;
+  padding: 10px 0;
+}
+
+#h2-calendar {
+  font-size: 30px;
+}
+
+#calendar {
+  background-color: #FFFFFF;
+}
+
+#days {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.day {
+  position: relative;
+  width: 14.285%;
+  padding-top: 14.285%;
+  margin: px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+/*.day {
+  height: 70px;
+  width: 14.285%;
+  margin: px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}*/
+
+.day-red {
+  background-color: #F5005B;
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFFFFF;
+  background-color: #0B1942;
+  width: 45%;
+  height: 50%;
+  padding: 8%;
+  font-size: 75%;
+  text-align: center;
+}
+
+/*.number {
+  color: #FFFFFF;
+  background-color: #0B1942;
+  width: 45%;
+  height: 50%;
+  padding: 8%;
+  font-size: 65%;
+  text-align: center;
+}*/
+
+.nav {
+  height: 50px;
+}
+
+.nav a {
+  color: #FFFFFF;
+}
+
+#card-1-pic {
+  width: 40vw;
+  /*height: auto;*/
+}
+
+#card-1-text {
+  width: 40vw;
+  padding: 0 0 0 5%;
 }
 
 /***** Tablet ******/
@@ -111,6 +272,11 @@ footer {
     flex-flow: row nowrap;
   }
 
+  #get-involved-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: stretch;
+  }
 }
 
 /***** Desktop ******/
