@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -11,40 +13,58 @@
   vertical-align: baseline;
   background: transparent;
 }
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 
 body {
   background-color: white;
   font-family: 'PT Sans', sans-serif;
 }
 
-header {
+.nav-wrapper {
+  height: 6.25em;
   display: flex;
   flex-flow: row nowrap;
-  align-items: stretch;
 }
 
 #logo {
   background-color: #F5005B;
-  height: 150px;
+  width: 6.25em;
 }
 
 nav {
     text-align: center;
-    background-color: #7DDFE8;
-    color: #FFFFFF;
+    background-color: #7DDFE8; 
+    width: 100vw;
+    height: 100%; 
 }
 
 .menu-items {
-  text-decoration: none;
+  color: #FFFFFF;
   list-style-type: none;
   display: flex;
   flex-flow: column nowrap;
   /*justify-content: space-bewteen;*/
   align-content: space-around;
-  justify-content: flex-end;
   width: 100%;
   height: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+li {
+  height: 100%;
+}
+
+li a {
+  color: white;
+ }
+
+a:link {
+  text-decoration: none;
 }
 
 #get-involved {
@@ -52,28 +72,29 @@ nav {
 }
 
 .get-involved-item {
-  margin: 0 10px;
+  /*width: 30vw;*/
+  margin: 0 5px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2em;
   font-weight: 400;
-  padding: 30px 0 20px 0;
+  padding: .75em 0 .75em 1em;
 }
 
 h2 {
   color: #FFFFFF;
   background-color: #0B1942;
-  padding: 20px 20px;
-  font-size: 30px;
+  padding: 10px 0 10px 10px;
+  font-size: 1.5em;
   font-weight: 400;
 }
 
 h3 {
   color: #FFFFFF;
-  font-size: 40px;
+  font-size: 2em;
   font-weight: 400;
-  padding: 20px 0 10px 30px;
+  padding: .5em 0 .0 1em;
 }
 
 #points {
@@ -87,15 +108,15 @@ h3 {
 
 #up-next {
   background-color: #0B1942;
+  padding: 0 0 1vw 0
 }
 
 .card {
-  /*/*padding: 20px;*/
-  /*margin: 20px;*/
-  padding: 5vw;
-  margin: 5vw;
+  padding: 4vw;
+  margin: 4vw;
   background-color: #E2E2E2;
 }
+
 #card-1 {
   font-size: 120%;
   display: flex;
@@ -105,6 +126,7 @@ h3 {
 #card-2 {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 h4 {
@@ -120,7 +142,7 @@ h4 {
   /*padding: 10px;*/
   /*padding: 5vw;*/
   width: 40vw;
-  margin: 2vw;
+  margin: 0vw;
 }
 
 #film-title-up-next {
@@ -134,21 +156,24 @@ h4 {
   color: #00B7D3;
 }
 
-
 /*.film img {
   height: 70%;
   width: auto;
 }*/
 
+.film img {
+  width: 40vw;
+}
+
 /*.film {
   height: 40vw;
 }*/
-
 
 hr {
   margin: 2em 0;
   border: 1px solid black;
 }
+
 .home {
   background-color: #00A5BF;
 }
@@ -161,10 +186,6 @@ hr {
   background-color: #00D5E7;
 }
 
-a:link {
-  /*text-decoration: none;*/
-}
-
 #join {
   padding: 10px;
 }
@@ -174,15 +195,31 @@ a:link {
   border-radius: 90%;
 }
 
-input {
+input[type=text], 
+input[type=email], 
+input[type=password],
+input[type=textarea] {
   border: 1px solid black;
 }
 
-footer {
-
+#copy {
+  /*height: 6vh;*/
+  height: 4.166em;
+  width: 100vw;
+  color: #ffffff;
+  /*align-content: flex-end;*/
+  background-color: #7DDFE8;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
-/******* Calendar *******/
+#copyright{
+  text-align: center;
+}
+
+/************ Calendar /************/
 
 .calendar-wrapper {
   background-color: #0B1942;
@@ -247,7 +284,15 @@ footer {
   text-align: center;
 }*/
 
+/************ Join Page/************/
+
+#genre-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 .nav {
+  color: #ffffff;
   height: 50px;
 }
 
@@ -255,9 +300,13 @@ footer {
   color: #FFFFFF;
 }
 
-#card-1-pic {
+#card-1-pic-wrapper {
   width: 40vw;
-  /*height: auto;*/
+}
+
+#card-1-pic {
+  width: 100%;
+  height: auto;
 }
 
 #card-1-text {
@@ -265,11 +314,31 @@ footer {
   padding: 0 0 0 5%;
 }
 
-/***** Tablet ******/
+/************************************/
+/***            Tablet            ***/
+/************************************/
 @media screen and (min-width: 545px) {
+
   .menu-items {
     display: flex;
     flex-flow: row nowrap;
+    /*justify-content: flex-start;*/
+    /*align-content: center;*/
+  }
+
+  .menu-items li {
+    width: 6.26em;
+  }
+
+  .film {
+    /*padding: 10px;*/
+    /*padding: 5vw;*/
+    width: 20vw;
+    margin: 0vw;
+  }
+
+  .film img {
+    width: 20vw;
   }
 
   #get-involved-wrapper {
@@ -277,9 +346,72 @@ footer {
     flex-flow: row nowrap;
     align-content: stretch;
   }
+
+  .get-involved-item {
+    width: 30vw;
+  }
+
+  /*** Join Page ***/
+  #profile {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  #genre-wrapper {
+    flex-flow: row wrap;
+  }
+
+  .genre {
+    width: 45vw;
+  }
+
+  #footer {
+    display: flex;
+    flex-flow: row nowrap
+  }
+
+  #copy {
+    height: 6.25em;
+    text-align: right;
+  }
+
+  #copyright {
+    text-align: right;
+    margin-right: 2em;
+  }
+
 }
 
-/***** Desktop ******/
+/************************************/
+/**            Desktop            ***/
+/************************************/
 @media screen and (min-width: 769px) {
+
+  #card-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  #card-1, #card-2 {
+    width: 40vw;
+  }
+
+  .film {
+    width: 40vw;
+  }
+
+  #contact-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .contact {
+    width: 30vw;
+  }
+ 
+  /*** Join Page ***/
+  .genre {
+      width: 32vw;
+    }
 
 }

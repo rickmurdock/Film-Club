@@ -4,81 +4,128 @@
         <title>Film Club - Join</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The Iron Yard Project: Week 2 - Weekly Assignment">
+        <meta name="keywords" content="HTML">
+        <meta name="author" content="Rick Murdock">
         <link href="../css/main.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <img id="logo" src="../images/filmclub.png" alt="film club logo">
-            <nav>
-                <ul class="menu-items">
-                    <li class="home"><a href="../index.html">Home</a></li>
-                    <li class="calendar"><a href="../calendar/index.html">Calendar</a></li>
-                    <li class="join"><a href="index.html">Join</a></li>
-                </ul>
-            </nav>
+            <div class="nav-wrapper">
+                <img id="logo" src="../images/filmclub.png" alt="film club logo">
+                <nav>
+                    <ul class="menu-items">
+                        <li class="menu home"><a href="../index.html">Home</a></li>
+                        <li class="menu calendar"><a href="../calendar/index.html">Calendar</a></li>
+                        <li class="menu join"><a href="index.html">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Join Film Club</h1>
         </header>
         <main id="join">
-            <h1>Join Film Club</h1>
-
             <form action="">
-                <div>
-                    <label for="">profilePicture</label>
-                    <br>
-                    <input type="file" id="proilePicture" name="proilePicture">
+                <div id="profile">
+                    <div id="picture-info">
+                        <div>
+                            <label for="">profile-picture</label>
+                            <br>
+                            <input type="file" id="proile-picture" name="profile-picture">
+                        </div>
+                        <img id="profile-pic" src="../images/profile-placeholder.png" alt="profile picture">
+                    </div>
+                    <div id="contact-wrapper">
+                        <div class="contact">
+                            <div>
+                                <label for="name">name</label>
+                                <br>
+                                <input type="text" id="name">
+                            </div>
+                            <div>
+                                <label for="email">email address</label>
+                                <br>
+                                <input type="email" id="email">
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div>
+                                <label for="password">password</label>
+                                <br>
+                                <input type="password" id="password">
+                            </div>
+                            <div>
+                                <label for="confirm-password">password</label>
+                                <br>
+                                <input type="password" id="confirm-password">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img id="profilePic" src="../images/profile-placeholder.png" alt="profile picture">
-                <div>
-                    <label for="name">name</label>
-                    <br>
-                    <input type="text" id="name">
+                <legend >Which genres are you interested in?</legend>
+                <div id="genre-wrapper">
+                    <div class="genre">
+                        <input type="checkbox" name="genre" id="action" value="action">
+                        <label for="action">action</label>
+                    </div>
+                    <div class="genre">
+                        <input type="checkbox" name="genre" id="adventure" value="adventure">
+                        <label for="adventure">adventure</label>
+                    </div>
+                    <div class="genre">
+                        <input type="checkbox" name="genre" id="comedy" value="comedy">
+                        <label for="comedy">comedy</label>
+                    </div>
+                    <div class="genre">
+                        <input type="checkbox" name="genre" id="drama" value="drama">
+                        <label for="drama">drama</label>
+                    </div>
+                    <div class="genre">                       
+                        <input type="checkbox" name="genre" id="fantasy" value="fantasy">
+                        <label for="fantasy">fantasy</label>
+                    </div>
+                    <div class="genre">
+                        <input type="checkbox" name="genre" id="historical" value="historical">
+                        <label for="historical">historical</label>
+                    </div>
+                    <div class="genre">
+                        <input type="checkbox" name="genre" id="horror" value="horror">
+                        <label for="horror">horror</label>
+                    </div>
+                    <div class="genre">
+                        <input type="checkbox" name="genre" id="mystery" value="mystery">
+                        <label for="mystery">mystery</label>
+                    </div>
+                    <div class="genre">
+                        <input type="checkbox" name="genre" id="romance" value="romance">
+                        <label for="romance">romance</label>
+                    </div>
+                    <div class="genre">
+                        <input type="checkbox" name="genre" id="science-fiction" value="science-fiction">
+                        <label for="science-fiction">science fiction</label>
+                    </div>
+                    <div class="genre">
+                        <input type="checkbox" name="genre" id="western" value="western">
+                        <label for="western">western</label>
+                    </div>
                 </div>
                 <div>
-                    <label for="email">email address</label>
-                    <br>
-                    <input type="email" id="email">
-                </div>
-                <div>
-                    <label for="password">password</label>
-                    <br>
-                    <input type="password" id="password">
-                </div>
-                <div>
-                    <label for="confirmPassword">password</label>
-                    <br>
-                    <input type="password" id="confirmPassword">
-                </div>
-                <div>
-                    <label for="">Which genres are you interested in?</label>
-                    <ul>
-                        <input type="checkbox" name="genre" value="action"> action
-                        <input type="checkbox" name="genre" value="action"> adventure
-                        <input type="checkbox" name="genre" value="comedy"> comedy
-                        <input type="checkbox" name="genre" value="drama"> drama
-                        <input type="checkbox" name="genre" value="fantasy"> fantasy
-                        <input type="checkbox" name="genre" value="historical"> historical
-                        <input type="checkbox" name="genre" value="horror"> horror
-                        <input type="checkbox" name="genre" value="action"> mystery
-                        <input type="checkbox" name="genre" value="action"> romance
-                        <input type="checkbox" name="genre" value="action"> science fiction
-                        <input type="checkbox" name="genre" value="action"> western
-                    </ul>
-                </div>
-                <div>
-                    <label for="additionalInput">Additional input</label>
-                    <input type=<textarea rows="" cols=""></textarea>
+                    <label for="additional-input">Additional input</label>
+                    <input type="textarea" id="additional-input" rows="" cols=""></textarea>
                 </div>
             </form>
         </main>
         <footer>
-        <footer>
-            <nav>
+        <footer id="footer">
+            <nav class="nav-wrapper">
                 <ul class="menu-items">
-                    <li class="home"><a href="../index.html">Home</a></li>
-                    <li class="calendar"><a href="../calendar/index.html">Calendar</a></li>
-                    <li class="join"><a href="index.html">Join</a></li>
-                    <li id="copy">© 2017, Film Club</li>
+                    <li class="menu home"><a href="../index.html">Home</a></li>
+                    <li class="menu calendar"><a href="../calendar/index.html">Calendar</a></li>
+                    <li class="menu join"><a href="index.html">Join</a></li>
                 </ul>
             </nav>
+            <div id="copy">
+                <span id="copyright">© 2017, Film Club</span>
+            </div>
         </footer>
     </body>
 </html>

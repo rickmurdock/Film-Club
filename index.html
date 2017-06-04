@@ -10,7 +10,7 @@
         <link href="css/main.css" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <!--<header>
             <img id="logo" src="images/filmclub.png" alt="film club logo">
             <nav>
                 <ul class="menu-items">
@@ -19,10 +19,24 @@
                     <li class="join nav"><a href="join/index.html">Join</a></li>
                 </ul>
             </nav>
+        </header>-->
+
+        <header>
+            <div class="nav-wrapper">
+                <img id="logo" src="images/filmclub.png" alt="film club logo">
+                <nav>
+                    <ul class="menu-items">
+                        <li class="menu home"><a href="index.html">Home</a></li>
+                        <li class="menu calendar"><a href="calendar/index.html">Calendar</a></li>
+                        <li class="menu join"><a href="join/index.html">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Get Involved</h1>
         </header>
         <main>
             <section id="get-involved">
-                <h1>Get Involved</h1>
+                <!--<h1>Get Involved</h1>-->
                 <div id="get-involved-wrapper">
                     <div class="get-involved-item">
                         <h2>Watch</h2>
@@ -63,7 +77,6 @@
                             <span>Film Club: <strong>6/13</strong></span>
                             <hr>
                             <h4>Discussion Points</h4>
-                            
                             <ul id="points">
                                 <li>perspective</li>
                                 <li>balance</li>
@@ -105,17 +118,18 @@
                     </div>
                 </div>
             </section>
-
         </main>
-        <footer>
-            <nav>
+        <footer id="footer">
+            <nav class="nav-wrapper">
                 <ul class="menu-items">
-                    <li class="home nav"><a href="index.html">Home</a></li>
-                    <li class="calendar nav"><a href="calendar/index.html">Calendar</a></li>
-                    <li class="join nav"><a href="join/index.html">Join</a></li>
-                    <li id="copy">© 2017, Film Club</li>
+                    <li class="menu home"><a href="index.html">Home</a></li>
+                    <li class="menu calendar"><a href="calendar/index.html">Calendar</a></li>
+                    <li class="menu join"><a href="join/index.html">Join</a></li>
                 </ul>
             </nav>
+            <div id="copy">
+                <span id="copyright">© 2017, Film Club</span>
+            </div>
         </footer>
     </body>
 </html>

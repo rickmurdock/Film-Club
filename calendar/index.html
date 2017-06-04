@@ -11,17 +11,19 @@
     </head>
     <body>
         <header>
-            <img id="logo" src="../images/filmclub.png" alt="film club logo">
-            <nav>
-                <ul class="menu-items">
-                    <li class="home"><a href="../index.html">Home</a></li>
-                    <li class="calendar"><a href="calendar/index.html">Calendar</a></li>
-                    <li class="join"><a href="../join/index.html">Join</a></li>
-                </ul>
-            </nav>
+            <div class="nav-wrapper">
+                <img id="logo" src="../images/filmclub.png" alt="film club logo">
+                <nav>
+                    <ul class="menu-items">
+                        <li class="menu home"><a href="../index.html">Home</a></li>
+                        <li class="menu calendar"><a href="index.html">Calendar</a></li>
+                        <li class="menu join"><a href="../join/index.html">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Meetup Calendar</h1>
         </header>
         <main>
-            <h1>Meetup Calendar</h1>
             <div class="calendar-wrapper">
                 <h2 id="h2-calendar">June</h2>
                 <div id="calendar">
@@ -61,15 +63,17 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <nav>
+        <footer id="footer">
+            <nav class="nav-wrapper">
                 <ul class="menu-items">
-                    <li class="home"><a href="../index.html">Home</a></li>
-                    <li class="calendar"><a href="index.html">Calendar</a></li>
-                    <li class="join"><a href="../join/index.html">Join</a></li>
-                    <li id="copy">© 2017, Film Club</li>
+                    <li class="menu home"><a href="../index.html">Home</a></li>
+                    <li class="menu calendar"><a href="index.html">Calendar</a></li>
+                    <li class="menu join"><a href="../join/index.html">Join</a></li>
                 </ul>
             </nav>
+            <div id="copy">
+                <span id="copyright">© 2017, Film Club</span>
+            </div>
         </footer>
     </body>
 </html>
