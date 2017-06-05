@@ -187,19 +187,31 @@ hr {
 }
 
 #join {
-  padding: 10px;
+  padding: 0 5vw;
 }
 
 #profile-pic {
-  height: 150px;
+  /*height: 150px;
+  height: 14.5em;*/
+  height: 20em;
+  /*width: 80vw;
+  margin: 5vw;*/
   border-radius: 90%;
 }
 
 input[type=text], 
 input[type=email], 
 input[type=password],
-input[type=textarea] {
-  border: 1px solid black;
+textarea {
+  border: .001em solid black;
+  width: 90vw;
+  padding: .4em;
+}
+
+button[type=submit] {
+  color: #FFFFFF;
+  background-color: #F5005B;
+  padding: 1em;
 }
 
 #copy {
@@ -223,15 +235,12 @@ input[type=textarea] {
 
 .calendar-wrapper {
   background-color: #0B1942;
-  padding: 10px 0;
+  padding: 0 0 1.5em 0;
 }
 
 #h2-calendar {
-  font-size: 30px;
-}
-
-#calendar {
-  background-color: #FFFFFF;
+  font-size: 2em;
+  padding: .6em;
 }
 
 #days {
@@ -241,6 +250,7 @@ input[type=textarea] {
 }
 
 .day {
+  background-color: #FFFFFF;
   position: relative;
   width: 14.285%;
   padding-top: 14.285%;
@@ -248,14 +258,6 @@ input[type=textarea] {
   border-right: 2px solid black;
   border-bottom: 2px solid black;
 }
-
-/*.day {
-  height: 70px;
-  width: 14.285%;
-  margin: px;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-}*/
 
 .day-red {
   background-color: #F5005B;
@@ -274,16 +276,6 @@ input[type=textarea] {
   text-align: center;
 }
 
-/*.number {
-  color: #FFFFFF;
-  background-color: #0B1942;
-  width: 45%;
-  height: 50%;
-  padding: 8%;
-  font-size: 65%;
-  text-align: center;
-}*/
-
 /************ Join Page/************/
 
 #genre-wrapper {
@@ -292,7 +284,7 @@ input[type=textarea] {
 }
 
 .nav {
-  color: #ffffff;
+  color: #FFFFFF;
   height: 50px;
 }
 
@@ -351,10 +343,32 @@ input[type=textarea] {
     width: 30vw;
   }
 
+  /*** Calendar Page ***/
+  .number {
+    width: 35%;
+    height: 35%;
+  }
+
   /*** Join Page ***/
   #profile {
     display: flex;
     flex-flow: row nowrap;
+    padding-left: 0em;
+  }
+  
+  #profile-pic {
+  /*height: 150px;
+  height: 14.5em;*/
+  /*width: 30vw;*/
+  /*margin: 1vw;*/
+  }
+
+  input[type=text], 
+  input[type=email], 
+  input[type=password],
+  textarea {
+    width: 30vw;
+    padding: .4em;
   }
   
   #genre-wrapper {
@@ -363,6 +377,7 @@ input[type=textarea] {
 
   .genre {
     width: 45vw;
+    /*height: 20em;*/
   }
 
   #footer {
@@ -390,15 +405,39 @@ input[type=textarea] {
   #card-wrapper {
     display: flex;
     flex-flow: row nowrap;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card {
+    margin: 1vw;
+    padding: .9em;
   }
 
   #card-1, #card-2 {
-    width: 40vw;
+    /*width: 44vw;*/
+    width: 50%;
   }
+  
+  /*#card-2 {
+    margin-right: 1vw;
+}*/
 
   .film {
-    width: 40vw;
+    /*width: 20vw;*/
+    width: 50%;
   }
+  .film img {
+    width: 97%;
+  }
+
+  /*** Calendar Page ***/
+  .number {
+    width: 20%;
+    height: 20%;
+  }
+ 
+  /*** Join Page ***/
 
   #contact-wrapper {
     display: flex;
@@ -408,10 +447,9 @@ input[type=textarea] {
   .contact {
     width: 30vw;
   }
- 
-  /*** Join Page ***/
+
   .genre {
-      width: 32vw;
+      width: 30vw;
     }
 
 }
