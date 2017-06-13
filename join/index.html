@@ -24,11 +24,11 @@
             <h1>Join Film Club</h1>
         </header>
         <main id="join">
-            <form action="">
+            <form action="submit">
                 <div id="profile">
                     <div id="picture-info">
                         <div>
-                            <label for="">profile-picture</label>
+                            <label>profile-picture</label>
                             <br>
                             <input type="file" id="proile-picture" name="profile-picture">
                         </div>
@@ -37,24 +37,24 @@
                     </div>
                     <div id="contact-wrapper">
                         <div class="contact">
-                            <div>
+                            <div class="contact-item">
                                 <label for="name">name</label>
                                 <br>
                                 <input type="text" id="name">
                             </div>
-                            <div>
+                            <div class="contact-item contact-email">
                                 <label for="email">email address</label>
                                 <br>
                                 <input type="email" id="email">
                             </div>
                         </div>
                         <div class="contact">
-                            <div>
+                            <div class="contact-item">
                                 <label for="password">password</label>
                                 <br>
                                 <input type="password" id="password">
                             </div>
-                            <div>
+                            <div class="contact-item">
                                 <label for="confirm-password">password</label>
                                 <br>
                                 <input type="password" id="confirm-password">
@@ -62,7 +62,9 @@
                         </div>
                     </div>
                 </div>
-                <legend >Which genres are you interested in?</legend>
+                <div id="genre-title">
+                    <label>Which genres are you interested in?</label>
+                </div>
                 <div id="genre-wrapper">
                     <div class="genre">
                         <input type="checkbox" name="genre" id="action" value="action">
@@ -109,7 +111,7 @@
                         <label for="western">western</label>
                     </div>
                 </div>
-                <div>
+                <div id="additional">
                     <label for="additional-input">Additional input</label>
                     <br>
                     <textarea name="additional-input" id="additional-input" cols="50" rows="2"></textarea>
@@ -117,7 +119,6 @@
                 <button type="submit">Join Film Club</button>
             </form>
         </main>
-        <footer>
         <footer id="footer">
             <nav class="nav-wrapper">
                 <ul class="menu-items">
