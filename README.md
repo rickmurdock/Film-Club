@@ -113,7 +113,7 @@ Your objective is to develop a responsive website according to the following spe
   
 * Text content is provided in the attached `project-text-content` folder.
 
-"Up Next" section movie links
+#### "Up Next" section movie links
 
 * "Rashomon": https://www.youtube.com/watch?v=7QTrx3YNz7A&t=8s
 
@@ -131,7 +131,7 @@ Your objective is to develop a responsive website according to the following spe
 
 * Within the `project-layout` there are three sub-folders: `small`, `medium`, and `large`. Each folder's layouts correspond to one of the following breakpoint ranges:
 
-Breakpoint Ranges
+#### Breakpoint Ranges
 
 | breakpoint range |	breakpoint range start |	breakpoint range end |
 | --- | --- | --- |
