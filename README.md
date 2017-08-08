@@ -64,31 +64,53 @@ Your objective is to develop a responsive website according to the following spe
 * Use the following colors for your layout:
 
   * text: `#0B1942`
+  
   * inline link: `#00B7D3`
+  
   * h2 background: `#0B1942`
+  
   * h2 color: `#FFFFFF`
+  
   * logo background: `#F5005B`
+  
   * navigation background: `#7DDFE8`
+  
   * navigation link color: `#FFFFFF`
+  
   * "Home" nav link background: `#00A5BF`
+  
   * "Calendar" nav link background: `#00B7D3`
+  
   * "Join" nav link background: `#00D5E7`
+  
   * "Up Next" background: `#0B1942`
+  
   * "Up Next" card background `#E2E2E2`
+  
   * calendar background and treatments: `#0B1942`
+  
   * calendar highlighted day: `#F5005B`
+  
   * button background: `#F5005B`
+  
   * copyright text: `#FFFFFF`
 
 ### Step 3: Architecting your web site
 
 * Using semantic markup, write the HTML for all three pages.
+
   * **Home**: The home page layout belongs in `index.htm`l.
+  
   * The title for the home page is "Film Club".
+  
   * **Calendar**: The calendar page layout belongs in `calendar/index.html`.
+  
   * The title for the calendar page is "Film Club - Calendar".
+  
   * **Join**: The join page layout belongs in `join/index.html`.
+  
   * The title for the join page is "Film Club - Join".
+  
 * Text content is provided in the attached `project-text-content` folder.
 
 "Up Next" section movie links
@@ -128,10 +150,15 @@ Breakpoint Ranges
 * The "name" input field on the newsletter page should have the type text.
 
 * The "email" input field on the newsletter page should have the type email.
+
 * The "password" input field on the newsletter page should have the type password.
+
 * The "confirm password" input field on the newsletter page should have the type password.
+
 * A user should be able to select multiple genres.
+
 * Use cursor: pointer; on elements that either link or perform some functionality.
+
 * Add helpful alternative text to the alt attribute of HTML img images.
 
 > Use `vw` units for both `width` and `height` when you want an element to retain it's shape yet act in a responsive way.
